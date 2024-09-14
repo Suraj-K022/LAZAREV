@@ -17,7 +17,7 @@ nav{
     color: aliceblue;
     font-family:Founders Grotesk;
     align-items: center;
-    padding: 2vw 5vw 1vw 5vw;
+    padding: 2vw 8vw 1vw 8vw;
     width: 100%;
     justify-content:space-evenly;
     justify-content: center;
@@ -61,13 +61,15 @@ nav h1{
 nav .nav-part2 #bottom #h6{
     color:rgb(13,163,78) ;
     font-size: 2.5vh;
+    white-space: nowrap;
 }
 .nav-part2 #bottom h6{
     text-align: center;
     color: #000000;
     font-size: 2vh;
     font-weight: 500;
-    color: aliceblue;     
+    color: aliceblue; 
+    white-space: nowrap;    
 }
 .nav-part2 h6{
     margin-top: 5px;
@@ -77,6 +79,7 @@ nav .nav-part2 #bottom #h6{
     align-items: center;
     justify-content: center;
     font-weight: normal;
+    white-space: nowrap;
 
     }
 .nav-part2 h6:hover{
@@ -111,6 +114,10 @@ nav .nav-part2 #bottom #h6{
     height: 40px;
     width: 40px;
     border-radius: 50px;   
+}
+#main{
+    min-height: 100vh;
+    width: 100vw;
 }
 
 #page1{
@@ -228,8 +235,355 @@ nav .nav-part2 #bottom #h6{
     z-index: 2;
 }
 
+
+
 #page2{
     height: 100vh;
     width: 100%;
     background-color: #111;
+    display: flex;
+    position: relative;
+    padding: 2vw 8vw;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    border-top: 1px solid #333;
+    color: aliceblue;
+
+}
+#page2 #page2-left{
+    /* background-color: aliceblue; */
+    height: 100%;
+    width: 40%;
+    padding: 10vh 0;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+#page2 #page2-left p{
+    font-family:Founders Grotesk;
+    font-size: 2.5vh;
+    font-weight: 300;
+
+}
+#page2 #page2-left h5{
+    font-family:Founders Grotesk;
+    font-weight: 300;
+    font-size: 3vh;
+    text-transform: capitalize;
+
+}
+#page2 #page2-right{
+    /* background-color: rgb(78, 120, 157); */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+#page2 #page2-right .right-blocks{
+    height: 25%;
+    width: 100%;
+    /* background-color: #af4141; */
+    border-bottom: 1px solid#333;
+    position: relative;
+    padding-top:4vh ;
+    padding-bottom:5vh ;
+}
+#page2 #page2-right .right-blocks h2{
+    font-family:Founders Grotesk;
+    font-size: 3.5vh;
+    font-weight: 300;
+}
+#page2 #page2-right .right-blocks img{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+}
+#page3{
+    background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;   
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+#page3 .page3-center{
+    /* background-color: rgb(153, 153, 153); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw;
+
+}
+#page3 .page3-center .icon{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.3vw;
+    border-radius: 50%;
+
+}
+#page3 .page3-center .icon i{
+    font-size: 2.8vw;
+    color: #000000;
+
+}
+#page3 .page3-center h5{
+    font-family:Founders Grotesk;
+    font-size: 0.8vw;
+    font-weight: 700;
+    padding: 10px 10px 5px 10px;
+    border-radius: 50px;
+    color: #000000;
+    background-color: aliceblue;
+    text-transform: uppercase;
+    margin-top: 0.5vw;
+    opacity: 0;
+    transition: all ease 0.5s;
+    transform: translateY(10%);
+}
+#page3 .page3-center:hover h5{
+    opacity: 1;
+    transform: translateY(0%);
+}
+#page3 video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(0.7) scaleY(0);
+    opacity: 0;
+    border-radius: 30px;
+    z-index: 9999;
+    
+}
+#page4{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    position: relative;
+    padding-bottom: 10vh;
+
+
+}
+#page4 .section{
+    height: 72vh;
+    width:100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13vh 10vw;
+    padding-bottom: 0;
+}
+#page4 .section .section-left{
+    height: 100%;
+    width: 27%;
+    border-top: 2px solid #000;
+}
+
+#page4 .section .section-left h2{
+    color: rgb(0, 0, 0);
+    font-family:Founders Grotesk;
+    padding-top: 5vh;
+    font-size: 6vh;
+    font-weight: 400;
+
+}
+#page4 .section .section-left p{
+    color: rgb(0, 0, 0);
+    font-family:Founders Grotesk;
+    font-size: 2.5vh;
+    padding-top: 6vh;
+    text-transform: capitalize;
+
+}
+#page4 .section .section-right{
+    height: 100%;
+    width: 65%;  
+    position: relative;  
+}
+#page4 .section .section-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page4 .section .section-right video{
+    height: 100%;
+    width:100% ;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity ease 0.1;
+}
+#page5{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #111111;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10vh 10.5vw;
+}
+#page5>button{
+    background-color: rgb(13,163,78);
+    color: whitesmoke;
+    white-space: nowrap;
+    border: none;
+    font-size: 3vh;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding:2vh 3vw 1vh 3vw;
+    border-radius: 50px;
+    font-family:Founders Grotesk;
+}
+#page5-right{
+    width: 70%;
+
+}
+
+#page5-right p{
+    color: whitesmoke;
+    font-family:Founders Grotesk;
+    font-size: 2.1vw;
+    line-height: 6vh;
+    text-transform: capitalize;
+    padding-bottom: 5vh;
+
+}
+#page5-right p span{
+    width: 15vw;
+    background-color: aliceblue;
+    display: inline-block;
+}
+
+#uiux h1{
+    font-size: 5vw;
+    font-weight: 400;
+    padding-top: 5vh;
+    border-top: 1px solid#a79c9c;
+    font-family:Founders Grotesk;
+    color: whitesmoke;
+}
+#product h1{
+    font-size: 5vw;
+    font-weight: 400;
+    padding-top: 5vh;
+    border-top: 1px solid#a79c9c;
+    font-family:Founders Grotesk;
+    color: whitesmoke;
+}
+#flex{
+    display: flex;
+    gap: 1vw;
+    padding-top: 3vh;
+    text-transform: uppercase;
+}
+#flex h4{
+    padding: 1vh 1vw .5vh 1vw ;
+    font-weight: 400;
+    border-radius: 50px;
+    border: 1px solid rgb(13,163,78);
+    color: white;
+    font-family:Founders Grotesk;
+
+
+}
+#flex h4:hover{
+    color: rgb(13,163,78);
+}
+
+
+#page5-container{
+    width: 55vw;
+    margin-top: 8vh;
+    font-family:Founders Grotesk;
+    color: aliceblue;
+}
+#page5-container .page5-elem{
+    width: 100%;
+    font-family:Founders Grotesk;
+    padding-top: 4vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: .5px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+#page5-container .page5-elem:hover{
+    border-top: 1.5px solid white;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+}
+#page5-container .page5-elem .over{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    position: absolute;
+    top: 0%;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+    
+}
+#page5-container .page5-elem:hover .over{
+    transform: translateY(0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    opacity: 1;
+}
+#page5-container .page5-elem>h3{
+    font-size: 5vh;
+    font-weight: 400;
+    white-space: nowrap;
+    position: relative;
+    z-index: 8;
+}
+#page5-container .page5-elem:hover h3{
+    padding-left: 1vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+    
+}
+
+#page5-container .page5-elem:hover i{
+    padding-right: 1vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+} 
+#page5-container .page5-elem>p{
+    font-size: 12px;
+    line-height: 20px;
+    width: 50%;
+    position: relative;
+    z-index: 8;
+
+}
+#page5-container .page5-elem>i{
+    font-size: 3vh;
+    position: relative;
+    z-index: 8;
+
+}
+
+
+#page6{
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
 }
