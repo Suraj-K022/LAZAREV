@@ -8,113 +8,98 @@ html,body{
     width: 100%;
 
 }
-::-webkit-scrollbar{
-    display: none;
-}
-nav{
-    display: flex;
+nav {
     position: fixed;
-    color: aliceblue;
-    font-family:Founders Grotesk;
-    align-items: center;
-    padding: 2vw 8vw 1vw 8vw;
+    /* background-color: rgb(0, 255, 68); */
+    display: flex;
+    align-items: flex-start;
+    height: 12vh;
     width: 100%;
-    justify-content:space-evenly;
-    justify-content: center;
-    z-index: 200;
-    background-color: #111111;
+    padding: 2vw 10.4vw;
+    justify-content: space-between;
+    background-color: #111;
+    z-index: 10;
+    /* overflow: hidden; */
+}
 
-
-}
-nav h1{
-    font-size: 4.5vh;
-    width: 50%;
-    text-align: left;
-}
-.nav-part2{
-    display: flex;
-    height: 100%;
-    width: 40%;
-    font-weight: 100;
-    text-transform: uppercase;   
-    justify-content: space-evenly;
-    position: relative;
-}
-.nav-part2 #bottom{
-    position: absolute;
-    bottom: 0%;
-    background-color: #212020;
-    height: 31vh;
-    width: 27%;
-    left: 7%;
-    border-radius: 20px;
-    text-align: center;
-    opacity: 0;
-    padding-top: 20px;
-
-}
-.nav-part2 #bottom:hover{
-    bottom: -650%;
-    transition:500ms ease-in;
-    opacity: 1;   
-}
-nav .nav-part2 #bottom #h6{
-    color:rgb(13,163,78) ;
-    font-size: 2.5vh;
-    white-space: nowrap;
-}
-.nav-part2 #bottom h6{
-    text-align: center;
-    color: #000000;
-    font-size: 2vh;
-    font-weight: 500;
-    color: aliceblue; 
-    white-space: nowrap;    
-}
-.nav-part2 h6{
-    margin-top: 5px;
-    font-size: 2.5vh;
+nav h1 {
+    font-size: 1.6vw;
     font-family:Founders Grotesk;
+    color: #fff;
+
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-part2 h4 {
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2.6vw;
+    color: #fff;
+    font-weight: 300;
+    font-family:Founders Grotesk;
+}
+
+.nav-part2 h5 {
+    margin-bottom: 0.7vw;
+    font-size: 14px;
+    font-weight: 300;
+    display: none;
+    overflow: hidden;
+    color: #fff;
+    font-family:Founders Grotesk;
+    /* background-color: #0BA34E; */
+}
+
+.nav-part2 h5 span {
+    font-size: 0.77vw;
+    font-weight: 400;
+    transform: translateY(25px);
+    display: inline-block;
+    font-family:Founders Grotesk;
+    /* background-color: #0BA34E; */
+    color: #fff;
+}
+
+nav button {
+    font-family:Founders Grotesk;
+    color: #fff;
+    background-color: #0BA34E;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    white-space: nowrap;
-
-    }
-.nav-part2 h6:hover{
-    color:rgb(13,163,78)  ;   
-    text-decoration: underline;
-}
-
-#button{
-    width: 150px;
-    display: flex;
-    border: 1px solid rgb(36, 129, 76);
+    padding: 14px 20px  10px 20px;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 500;
     border-radius: 50px;
-    background-color: rgb(13,163,78) ;  
-    padding-left: 3vh;  
-    overflow: hidden;  
-    position: relative;    
-}
-
-#button button{
-    position: absolute;
-    height: 100%;
-    left: 10%;
-    font-size: 2vh;
-    color: aliceblue;
-    background-color: rgb(13,163,78) ;  
     border: none;
-    border-radius: 50px;
-    font-weight:bold;
+
 }
-#button  svg{
-    margin-left: 80px;
-    height: 40px;
-    width: 40px;
-    border-radius: 50px;   
+
+nav button svg {
+    height: 1vw;
+    margin-left: 1.6vw;
 }
+
+#nav-bottom {
+    width: 79%;
+    height: 0vh;
+    position: absolute;
+    top: 100%;
+    background-color: #111;
+    z-index: 9;
+    border-bottom: 1px solid #fff;
+
+}
+
 #main{
     min-height: 100vh;
     width: 100vw;
@@ -150,14 +135,7 @@ nav .nav-part2 #bottom #h6{
     background: rgb(13,163,78);;
     border-radius: 50px;
 }
-#page1 h1 span :hover{
-    content: "svg";
-    scale: 10 10 10 10;
-    height: 12vh;
-    width: 12vh;
-    transition: 200ms ease-in;   
-    transform: rotate(180deg);
-}
+
 #page1 p{
     font-size: 3vh;
     font-family:Founders Grotesk;
@@ -434,10 +412,10 @@ nav .nav-part2 #bottom #h6{
     width: 100vw;
     background-color: #111111;
     display: flex;
-    position: relative;
     align-items: flex-start;
     justify-content: space-between;
     padding: 10vh 10vw;
+    position: relative;
 }
 #page5>button{
     position: sticky;
@@ -590,7 +568,7 @@ summary::marker{
 
 
 #page6{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #ffffff;
     padding: 10vh 10vw;
@@ -603,40 +581,45 @@ summary::marker{
     padding-left: 23.5vw;
     line-height: 6vw;
     text-transform: capitalize;
-    padding-bottom: 8vh;
+    padding-bottom: 6vh;
     border-bottom: 1px solid #dadada;
+
 
 }
 #page6-content{
+    padding-top: 5vh;
     gap: 3vw;
     display: flex;
     align-items: flex-start;
-    border-bottom: 1px solid#333;   
 }
 #blue-btn{
-    background-color: rgb(13,163,78);
-    width: 15vw;
-    height: 3vw;
+    background-color: rgb(75,101,247);
+    width: 18vw;
+    height: 3.5vw;
     border-radius: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-}
-/* #page6-content>button{
-    position: sticky;
-    top: 15%;
-    background-color: rgb(13,163,78);
-    color: whitesmoke;
-    white-space: nowrap;
-    border: none;
-    font-size: 1vw;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding:4vh 5vw 3vh 5vw;
-    border-radius: 50px;
+    justify-content: center; 
     font-family:Founders Grotesk;
-} */
+    position: sticky;
+    top: 12%;
+
+}
+#blue-btn h4{
+    /* letter-spacing: 1px; */
+    position: absolute;
+    font-family:Founders Grotesk;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 1vw;
+    padding-top: 1vh;
+}
+#blue-btn h4 i{
+    font-size: 1vw;
+    margin-left: 0.5vw;
+    font-weight: 300;
+}
 #right6{
     height: 60%;
     width: 50%;
@@ -646,11 +629,114 @@ summary::marker{
     font-family:Founders Grotesk;
     text-transform: capitalize;
     font-weight: 400;
-    padding-top: 6vh;
-    padding-bottom: 6vh;
+    padding-left: 12vh;
+    padding-bottom: 10vh;
 }
-/* #page7{
+#page6-bottom{
+    height: 50vh;
+    width: 100%;
+    border-top: 1px solid#dadada;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family:Founders Grotesk;
+    font-weight: 100;
+    font-size: 2vh;
+    color: whitesmoke;
+}
+#btm6-part1{
+    border-right: 1px solid#dadada;
+    width: 30%;
+    height: 100%;
+}
+#btm6-part2{
+    border-right: 1px solid#dadada;
+    width: 28%;
+    height: 100%;
+
+}
+#btm6-part2 h4:nth-child(2){
+    transform: translateX(0);
+}
+#btm6-part2 h4:nth-child(3){
+    transform: translateX(10%);
+}
+#btm6-part2 h4:nth-child(4){
+    transform: translateX(20%);
+}
+#btm6-part2 h4:nth-child(5){
+    transform: translateX(30%);
+}
+#btm6-part2 h4:nth-child(6){
+    transform: translateX(40%);
+}
+#btm6-part2 h4:nth-child(7){
+    transform: translateX(50%);
+}
+#btm6-part3{
+    border-right: 1px solid#dadada;
+    width: 15%;
+    height: 100%;
+}
+#btm6-part3 h4:nth-child(2){
+    transform: translateX(0);
+}
+#btm6-part3 h4:nth-child(3){
+    transform: translateX(20%);
+}
+
+#btm6-part4{
+    border-right: 1px solid#dadada;
+    width: 15%;
+    height: 100%;
+}
+#btm6-part4 h4:nth-child(2){
+    transform: translateX(0);
+}
+#btm6-part4 h4:nth-child(3){
+    transform: translateX(15%);
+}
+#btm6-part4 h4:nth-child(4){
+    transform: translateX(30%);
+}
+#btm6-part5{
+    width: 15%;
+    height: 100%;
+}
+.btm6-parts{
+    padding: 3vh 1vw;
+}
+.btm6-parts h5{
+    color: #000;
+    font-weight: 500;
+    font-size: 0.9vw;
+    margin-bottom: 4vh;
+}
+.btm6-parts h4{
+    background-color: #111;
+    width: 100%;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 0.95vw;
+    font-weight: 500;
+    display: flex;
+    margin-bottom: 0.3vh;
+    align-items: center;
+}
+.btm6-parts h4>span{
+    background-color: #333;
+    padding: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    margin-right: 1vw;
+}
+#page7{
+    background-color: #111111;
     height: 100vh;
     width: 100vw;
-    background-color: #333;
-} */
+}
